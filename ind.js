@@ -1,17 +1,20 @@
 //a13384280c6d9eb0001034288588037139a161d5f8d053950fa11484214f434a
 //38760eabb666e8e61ee628a17c4090cc50728e095ff24218119d51bd22475363
 
+const crypto = require('crypto');
 
+const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
-const chars =
-    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-
-const maxLength = 5;
+const maxLength = 10;
 
 function generateString(current, length) {
 
     if (current.length === length) {
-        console.log(current);
+        // const hashedValue = crypto.createHash('sha256').update(current).digest('hex');
+        // if(hashedValue === process.argv[2]){
+        //     console.log(`The password is : ${current}`)
+        //     return;
+        // }
         return;
     }
 
@@ -24,8 +27,13 @@ function generateString(current, length) {
 console.log("Going to do bruteforce");
 console.log("--------------------------")
 
-setTimeout(() => {
-    for (let length = 1; length <= maxLength; length++) {
-        generateString("", length);
-    }
-}, 4000);
+
+for (let length = 1; length <= maxLength; length++) {
+    generateString("", length);
+}
+
+// setTimeout(() => {
+//     for (let length = 1; length<= maxLength; length++) {
+//         generateString("", length);
+//     }
+// }, 4000);
