@@ -31,7 +31,7 @@ function compareTextInExcel(filePath, sheetName, searchText) {
 }
 
 
-const filePath = './passwords_sha256.csv';
+const filePath = '../Testing/passwords_sha256.csv';
 const searchText = '36bf0fad427fae21ac78bc7646ea67789b5f26060a76310013bb311579bd0c03';
 
 const result = compareTextInExcel(filePath, null, searchText);

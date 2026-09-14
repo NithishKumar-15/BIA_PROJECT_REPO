@@ -29,7 +29,7 @@ function findTargetString(target) {
     const generator = generateStrings();
 
     for (const str of generator) {
-        console.log(str); 
+        console.log(str);
         const currentHash = crypto.createHash("sha256").update(str).digest('hex');
 
         if (currentHash === target) {
@@ -41,13 +41,6 @@ function findTargetString(target) {
 }
 
 
-const targetString = process.argv[2]; 
-console.log("Wait for a second, Going to start the brute force")
-console.log('-------------------------------------------------')
-
-setTimeout(() => {
-    findTargetString(targetString);
-}, 3000)
-
+module.exports=findTargetString;
 
 //961b6dd3ede3cb8ecbaacbd68de040cd78eb2ed5889130cceb4c49268ea4d506  --> aa

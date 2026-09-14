@@ -5,18 +5,13 @@ const url = 'mongodb://localhost:27017';
 const client = new MongoClient(url);
 
 
-const dbName = 'RainBow_Table';
+const dbName = 'User_Details';
 
-async function connectDB() {
-    try {
-        await client.connect();
-        console.log('Successfully connected to the MongoDB server');
+try {
+    client.connect();
 
-        const db = client.db(dbName);
-
-    } catch (error) {
-        console.error('Connection failed:', error);
-    }
+} catch (error) {
+    console.error('Connection failed:', error);
 }
 
-connectDB();
+module.exports = { client, dbName };
