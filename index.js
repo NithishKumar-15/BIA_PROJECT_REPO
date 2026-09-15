@@ -47,8 +47,8 @@ if (process.argv[2] === '-b' || process.argv[2] === '-d' || process.argv[2] === 
     } else if (process.argv[2] === '-a') {
         authentication();
     } else if (process.argv[2] === undefined) {
-        console.log('Wlecome to the hashdek tool kit')
-        console.log('---------------------------------------')
+        console.log('Wlecome to the hashdek hashed password cracking tool kit')
+        console.log('---------------------------------------------------------')
         console.log('mention -b for brute force');
         console.log('mention -d for dictonary attack')
         console.log('mention -r for Rainbow table attack')
