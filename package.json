@@ -1,6 +1,9 @@
 {
   "name": "bia_project",
   "version": "1.0.0",
+  "bin": {
+    "hashdek":"./index.js"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {

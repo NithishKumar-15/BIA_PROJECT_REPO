@@ -38,9 +38,10 @@ function findTargetString(target) {
             break;
         }
     }
+    process.exit();
 }
 
 
-module.exports=findTargetString;
+module.exports = findTargetString;
 
 //961b6dd3ede3cb8ecbaacbd68de040cd78eb2ed5889130cceb4c49268ea4d506  --> aa
