@@ -62,11 +62,3 @@ if (process.argv[2] === '-b' || process.argv[2] === '-d' || process.argv[2] === 
     process.exit();
 }
 
-// /home/nithish/Documents/MyLearning/BIA_PROJECT/Testing/passwords_sha256.csv -> Raiinbow table
-// /home/nithish/Documents/MyLearning/BIA_PROJECT/Testing/million_records.txt -> Dictonary attack
-
-// const searchText = '36bf0fad427fae21ac78bc7646ea67789b5f26060a76310013bb311579bd0c03
-
-//961b6dd3ede3cb8ecbaacbd68de040cd78eb2ed5889130cceb4c49268ea4d506  --> aa
-// ed968e840d10d2d313a870bc131a4e2c311d7ad09bdf32b3418147221f51a6e2 ->aaaaa
-//7ef37a4c4c94bb596ec0ae5707e3eec7daab0f23772bb1123e5c0a1d3cf1079c -> NETWORK@123
