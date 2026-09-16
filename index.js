@@ -52,8 +52,8 @@ if (process.argv[2] === '-b' || process.argv[2] === '-d' || process.argv[2] === 
         console.log('mention -b for brute force');
         console.log('mention -d for dictonary attack')
         console.log('mention -r for Rainbow table attack')
-        console.log('mention -s to store your data to BD')
-        console.log('mention -a to fetch your details from BD')
+        console.log('mention -s to store your data to DB')
+        console.log('mention -a to fetch your details from DB')
         process.exit();
     }
 
