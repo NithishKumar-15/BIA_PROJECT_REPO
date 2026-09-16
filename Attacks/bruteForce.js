@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 
-// lexicographicStringGenerator.js
+
 const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
 function* generateStrings() {
